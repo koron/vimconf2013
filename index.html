@@ -20,13 +20,6 @@
       background-color: #fff;
     }
 
-    .cover h2 {
-      color: #c9f;
-      text-shadow: 4px 4px 8px #333;
-      text-align:center;
-      font-size: 72px;
-    }
-
   </style>
 
 </head>
@@ -47,103 +40,255 @@
 
     <style>
       section#Cover {
-        background: #fff !important;
+        background: #fff;
       }
-      #Cover h2 {
-        font-size:96px;
-      }
+
+      #Cover h2,
       #Cover h3 {
-        color: #c9f;
+        color: #c3f;
         text-shadow: 4px 4px 8px #333;
         text-align:center;
-        font-size: 72px;
+      }
+      #Cover h2 {
+        font-size: 96px;
+      }
+      #Cover h3 {
         margin-top: 36px;
         font-size: 64px;
       }
     </style>
   </div></section>
 
-  <div class="slide" id="SelfIntroduce"><div>
-    <section>
-      <header>
-      <h2>Who am I?</h2>
-      </header>
-      <img style='height: 350px; float: right;' src='images/popo.jpg' alt="">
-      <ul>
-        <li>MURAOKA Taro/村岡太郎</li>
-        <li><a href='http://www.kaoriya.net/' target='_blank'>http://www.kaoriya.net/</a></li>
-        <li>twitter: @kaoriya</li>
-        <li>github: koron</li>
-        <li>a.k.a: KoRoN</li>
-      </ul>
-    </section>
-  </div></div>
+  <section class="slide" id="SelfIntroduce"><div>
+    <header>
+    <h2>Who am I?</h2>
+    </header>
+    <img style='height: 350px; float: right;' src='images/popo.jpg' alt="">
+    <ul>
+      <li>MURAOKA Taro/村岡太郎</li>
+      <li><a href='http://www.kaoriya.net/' target='_blank'>http://www.kaoriya.net/</a></li>
+      <li>twitter: @kaoriya</li>
+      <li>github: koron</li>
+      <li>a.k.a: KoRoN</li>
+    </ul>
+  </div></section>
 
-  <div class="slide" id="MyPerformance"><div>
-    <section>
-      <header>
-        <h2>My Performance</h2>
-      </header>
-      <img style='height: 350px; float: right;' src='images/popo.jpg' alt="">
-      <ul>
-        <li>Dynamic loading (if_perl and others)</li>
-        <li>aquote/iquote textobj (idea from 2ch)</li>
-        <li>User defined completion</li>
-        <li class="next">Direct Draw</li>
-        <li class="next">libiconv</li>
-        <li class="next">etc/many bug fixes</li>
-      </ul>
-    </section>
-  </div></div>
+  <section class="slide shout" id="DifficultToBeMerged"><div>
+    <header>
+      <h2>Be merged in Vim, is difficult</h2>
+    </header>
+  </section>
 
-  <div class="slide shout" id="IamAnExpert"><div>
-    <section>
+  <section class="slide" id="MyPerformance"><div>
+    <header>
+      <h2>My Performance</h2>
+    </header>
+    <img style='height: 350px; float: right;' src='images/popo.jpg' alt="">
+    <ul>
+      <li>Dynamic loading (if_perl and others)</li>
+      <li>aquote/iquote textobj (idea from 2ch)</li>
+      <li>User defined completion</li>
+      <li class="next">Direct Draw</li>
+      <li class="next">libiconv</li>
+      <li class="next">etc/many bug fixes</li>
+    </ul>
+  </div></section>
+
+  <section class="slide shout" id="IamAnExpert"><div>
       <header>
         <h2>I am an expert to propose new features for Vim!</h2>
       </header>
-    </section>
-  </div></div>
+  </div></section>
 
-  <div class="slide" id="BadStory1"><div>
-    <section>
-      <header>
-        <h2>Bad Story of Proposal</h2>
-      </header>
-      <ol>
-        <li>I just came up with a good idea!</li>
-        <li class="next">Listen to me, I have great idea! (send mail to vim-dev)</li>
-        <li class="next">(ignored)</li>
-        <li class="next">Why leaders didn't listen to my awesome idea...</li>
-      </ol>
-    </section>
-  </div></div>
+  <section class="slide" id="BadStory1"><div>
+    <header>
+      <h2>Bad Story of Proposal</h2>
+    </header>
+    <ol>
+      <li>I just came up with a good idea!</li>
+      <li class="next">Listen to me, I have great idea! (send mail to vim-dev)</li>
+      <li class="next">(ignored)</li>
+      <li class="next">Why leaders didn't listen to my awesome idea...</li>
+    </ol>
+  </div></section>
 
-  <div class="slide" id="MissingLinks"><div>
-    <section>
-      <header>
-        <h2>Missing Links (general)</h2>
-      </header>
+  <section class="slide" id="MissingLinks"><div>
+    <header>
+      <h2>Why this happend?: Missing Links</h2>
+    </header>
+    <ul>
+      <li class="next">Share <strong>PROBLEM</strong></li>
+      <li class="next">Illustrate <strong>SOLUTION</strong></li>
+      <li class="next">Show <strong>EVIDENCE</strong>
       <ul>
-        <li>Share PROBLEM</li>
-        <li>Illustrate SOLUTION</li>
-        <li>Show EVIDENCE (patch, mock or so)</li>
+        <li class="next">patch</li>
+        <li class="next">mock</li>
+        <li class="next">manual or so</li>
+      </li>
+    </ul>
+  </div></section>
+
+  <section class="slide" id="MissingLinksForVim"><div>
+    <header>
+      <h2>Missing Links (Vim specific)</h2>
+    </header>
+    <ul>
+      <li class="next">Vim is the <strong>TEXT EDITOR</strong>
+      <ul>
+        <li class="next">not an IDE</li>
+        <li class="next">not a Programming Language</li>
+        <li class="next">not a Runtime</li>
       </ul>
-    </section>
-  </div></div>
+      <li class="next">A <strong>patch</strong> is very important</li>
+    </ul>
+  </div></section>
+
+  <section class="slide shout" id=""><div>
+    <header>
+      <h2>How to Propose, (recursively)</h2>
+    </header>
+  </div></section>
+
+  <section class="slide" id="Problems"><div>
+    <header>
+      <h2>Problems</h2>
+    </header>
+    <ul>
+      <li>Lack of sharing <strong>PROBLEM</strong>
+      <li>Lack of illustrating <strong>SOLUTION</strong>
+      <li>Lack of <strong>EVIDENCE</strong>
+      <code class="next vim-patch">Patch 7.4.001
+Problem:    Character classes such as [a-z] to not react to 'ignorecase'.
+            Breaks man page highlighting. (Mario Grgic)
+Solution:   Add separate items for classes that react to 'ignorecase'.  Clean
+            up logic handling character classes.  Add more tests.
+Files:	    src/regexp_nfa.c, src/testdir/test64.in, src/testdir/test64.ok
+
+
+*** ../vim-7.4.000/src/regexp_nfa.c	2013-08-01 18:27:51.000000000 +0200
+--- src/regexp_nfa.c	2013-08-14 11:49:50.000000000 +0200
+***************
+*** 29,34 ****
+--- 29,37 ----
+  # define NFA_REGEXP_DEBUG_LOG	"nfa_regexp_debug.log"
+  #endif
+</code>
+      <li class="next">Lack of <strong>STRATEGY</strong>: philosophical incomprehension (無理解)
+    </ul>
+    <h3 class="next">Source of Discommunication</h3>
+
+    <style>
+    #Problems h3 {
+      color: #f00;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    #Problems .vim-patch {
+      display: inline-block;
+      position: absolute;
+      top: 128px;
+      right: 16px;
+      font-size: 12px;
+      line-height: 14px;
+      float: right;
+      width: 50%;
+      white-space: pre;
+      overflow: hidden;
+      text-indent: 0px;
+    }
+    </style>
+  </div></section>
+
+  <section class="slide shout" id="Solutions"><div>
+    <header>
+      <h2>Solution? Huh?<br />It's me!</h2>
+    </header>
+  </div></section>
+
+  <section class="slide" id="Solutions2"><div>
+    <header>
+      <h2>Solutions</h2>
+    </header>
+    <ol>
+      <li class="next">Build <strong>STRATEGY</strong>
+      <li class="next">Known your <strong>PROBLEM</strong>
+      <li class="next">Make <strong>SOLUTION</strong> simple
+      <li class="next">Write a <strong>PATCH</strong>
+    </ol>
+    <h3 class="next">Leverage <strong>vim-jp</strong>: reviewer, collaborator and others</h3>
+    <style>
+    #Solutions2 h3 {
+      color: #f69;
+      font-size: 40px;
+      line-height: 42px;
+      font-weight: bold;
+    }
+    </style>
+  </div></section>
+
+  <section class="slide shout" id="Evidences"><div>
+    <header>
+      <h2>Evidences? Huh?<br />(snip)</h2>
+    </header>
+  </div></section>
+
+  <section class="slide shout" id="Evidences2"><div>
+    <header>
+      <h2>Let's look into <br />
+        <a href="https://bitbucket.org/koron/vim-kaoriya-patches/src" target="_new">My Patches</a></h2>
+    </header>
+  </div></section>
+
+  <section class="slide" id="Patches"><div>
+    <header>
+      <h2>Patches</h2>
+      <ul>
+        <li class="next">efficient_printing.diff
+        <li class="next">windows_transparency.diff
+        <li class="next">charspace.diff
+        <li class="next">caption_switch.diff
+        <li class="next">ambiwidth_auto.diff
+        <li class="next">sentence_until_punctuation.diff
+      </ul>
+      <ul>
+        <li class="next">migemo_feature.diff
+        <li class="next">guess_encode_feature.diff
+        <li class="next">csearch_highlight.diff
+        <li class="next">eval_rmdir.diff
+        <li class="next">eval_marks.diff
+        <li class="next">autoload_cache.diff
+      </ul>
+    </header>
+    <style>
+    #Patches ul {
+      float: left;
+      display: inline-block;
+      box-sizing: border-box;
+      width: 50%;
+      white-space: nowrap;
+    }
+    </style>
+  </div></section>
+
+  <section class="slide shout" id="ThankYou"><div>
+    <header>
+      <h2>Thank You All!</h2>
+    </header>
+  </div></section>
+
 
   <!--
 
-  <div class="slide" id=""><div>
-    <section>
-      <header>
-        <h2></h2>
-      </header>
-    </section>
-  </div></div>
+  <section class="slide" id=""><div>
+    <header>
+      <h2></h2>
+    </header>
+  </div></section>
 
   -->
 
   <div class="progress"><div></div></div>
-  <script src="shower/shower.min.js"></script>
+  <script src="shower/shower.js"></script>
 </body>
 </html>
