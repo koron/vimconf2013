@@ -4,8 +4,7 @@
   <title>How to suggest new features for Vim</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1274, user-scalable=no">
-  <link rel="stylesheet" href="themes/ribbon/styles/style.css">
-  <link rel="stylesheet" href="themes/ribbon/styles/print.css" media="print">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
 
   <style>
     .slide section:before {
@@ -16,8 +15,9 @@
       background: url(images/vim-colorbar.png) repeat-x;
     }
 
-    .slide section {
-      font-size: 28px;
+    section.slide {
+      /*font-size: 28px;*/
+      background-color: #fff;
     }
 
     .cover h2 {
@@ -25,21 +25,6 @@
       text-shadow: 4px 4px 8px #333;
       text-align:center;
       font-size: 72px;
-    }
-
-    #Cover section {
-      background: #fff;
-    }
-    #Cover h2 {
-      font-size:96px;
-    }
-    #Cover h3 {
-      color: #c9f;
-      text-shadow: 4px 4px 8px #333;
-      text-align:center;
-      font-size: 72px;
-      margin-top: 36px;
-      font-size: 64px;
     }
 
   </style>
@@ -53,15 +38,30 @@
     <p>MURAOKA Taro (a.k.a. KoRoN or @kaoriya)</p>
   </header>
 
-  <div class="slide cover" id="Cover"><div>
-    <section>
-      <header>
-        <h2>How to suggest new features for Vim</h2>
-        <h3>Better way of proposal</h3>
-      </header>
-      <img src="images/vim-background.png" alt="">
-    </section>
-  </div></div>
+  <section class="slide cover h" id="Cover"><div>
+    <header>
+      <h2>How to suggest new features for Vim</h2>
+      <h3>Better way of proposal</h3>
+    </header>
+    <img src="images/vim-background.png" alt="">
+
+    <style>
+      section#Cover {
+        background: #fff !important;
+      }
+      #Cover h2 {
+        font-size:96px;
+      }
+      #Cover h3 {
+        color: #c9f;
+        text-shadow: 4px 4px 8px #333;
+        text-align:center;
+        font-size: 72px;
+        margin-top: 36px;
+        font-size: 64px;
+      }
+    </style>
+  </div></section>
 
   <div class="slide" id="SelfIntroduce"><div>
     <section>
@@ -82,16 +82,15 @@
   <div class="slide" id="MyPerformance"><div>
     <section>
       <header>
-        <h2>My Perfomance</h2>
+        <h2>My Performance</h2>
       </header>
       <img style='height: 350px; float: right;' src='images/popo.jpg' alt="">
       <ul>
-        <li class="next">aquote/iquote textobj</li>
-        <li class="next">User defined completion</li>
+        <li>Dynamic loading (if_perl and others)</li>
+        <li>aquote/iquote textobj (idea from 2ch)</li>
+        <li>User defined completion</li>
         <li class="next">Direct Draw</li>
-        <li class="next">libiconv/libintl</li>
-        <li class="next">Dynamic loading (if_perl and others)</li>
-        <li class="next">regexp supports multibyte char</li>
+        <li class="next">libiconv</li>
         <li class="next">etc/many bug fixes</li>
       </ul>
     </section>
@@ -108,12 +107,13 @@
   <div class="slide" id="BadStory1"><div>
     <section>
       <header>
-        <h2>Bad Story #1</h2>
+        <h2>Bad Story of Proposal</h2>
       </header>
       <ol>
         <li>I just came up with a good idea!</li>
-        <li>Listen to me, I have great idea! (send mail to vim-dev)</li>
-        <li>Why leaders didn't listen to my idea... (ignored)</li>
+        <li class="next">Listen to me, I have great idea! (send mail to vim-dev)</li>
+        <li class="next">(ignored)</li>
+        <li class="next">Why leaders didn't listen to my awesome idea...</li>
       </ol>
     </section>
   </div></div>
@@ -121,10 +121,12 @@
   <div class="slide" id="MissingLinks"><div>
     <section>
       <header>
-        <h2>Missing Links</h2>
+        <h2>Missing Links (general)</h2>
       </header>
       <ul>
-        <li>Share the PROBLEM</li>
+        <li>Share PROBLEM</li>
+        <li>Illustrate SOLUTION</li>
+        <li>Show EVIDENCE (patch, mock or so)</li>
       </ul>
     </section>
   </div></div>
@@ -142,6 +144,6 @@
   -->
 
   <div class="progress"><div></div></div>
-  <script src="scripts/script.js"></script>
+  <script src="shower/shower.min.js"></script>
 </body>
 </html>
